@@ -1,0 +1,13 @@
+{% extends "site/catalog.html" %}
+{% load markup %}
+
+{% block content %}
+<div class="span-24 last banner">
+	{{ page.files.0.render}}
+</div>
+<div class="span-24">
+	{% with "horizontal" as catalog_class %}
+		{% include "site/catalog.inc.html" %}
+	{% endwith %}
+</div>
+{% endblock %}
