@@ -3,7 +3,7 @@
 {% block main %}
 	{% if items %}
 		<h2>{{page.name}}</h2>
-		{% if page.dic.text %}{{ page.dic.text|textile }}{% endif %}
+		{% if page.dic.description %}{{ page.dic.description|textile }}{% endif %}
 		{% include "site/catalog.inc.html" %}
 	{% endif %}
 {% endblock %}
